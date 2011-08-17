@@ -1,6 +1,6 @@
 h1. Simple and nice looking form validation with JQuery and Ruby on Rails
 
-I stripped of the code from our own "webpage":http://www.tenhousandmonkeys.de to make it public as a jquery plugin.
+I stripped of the code from our own "webpage":http://www.tenthousandmonkeys.de to make it public as a jquery plugin.
 
 There are a lot of plugins out there for form validation with javascript. But we'd like to stay with the Ruby on Rails "way of validation":http://edgeguides.rubyonrails.org/active_record_validations_callbacks.html server side. Therefore we needed jquery just for showing the user whats wrong or right with his inputs.
 
@@ -8,8 +8,9 @@ This plugin will send the form contents via AJAX to the server and handles the r
 
 p{color:red}. Note: This is the initial release version 1.0.0. There are no options yet. If you want to contribute, please email us.
 
-p{color:red} Demo:
-Have a look at our "page":http://www.tenhousandmonkeys.de/#contact-wrapper and drop us a line. 
+h2. Demo
+
+Have a look at our "page":http://www.tenthousandmonkeys.de/#contact-wrapper and drop us a line. 
 
 h2. Using the plugin
 
@@ -24,7 +25,7 @@ To enable the validation.
 
 h2. Configuring Rails
 
-This is simple. For our "own webpage":http://www.tenhousandmonkeys.de , we are using a simple model of contact messages.
+This is simple. For our "own webpage":http://www.tenthousandmonkeys.de , we are using a simple model of contact messages.
 
 <pre>
 <code>
@@ -111,7 +112,7 @@ The plugin will check the message from server if it is an JSON object or not. If
 	border: 1px solid red;
 	cursor: pointer;
 	text-indent: 40px;
-	background: transparent url(image_path('error.png')) no-repeat;
+	background: transparent url('error.png') no-repeat;
 }
 
 .form_success {
@@ -120,12 +121,8 @@ The plugin will check the message from server if it is an JSON object or not. If
       	overflow: hidden;
       	cursor: pointer;
       	z-index:999;     
-     	h1 {
-         
-      	}
-      	h2 {
-        
-      	}
+     	h1 { }
+      	h2 { }
 }
 </code>
 </pre>
